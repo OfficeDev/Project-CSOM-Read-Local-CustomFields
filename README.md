@@ -1,12 +1,12 @@
-# Access CSOM Local Custom Fields
+# Project CSOM Read Local CustomFields
 
-The TaskCustomFields sample uses C# and the Project CSOM to demonstrate how to access custom fields that are defined within a project. 
+The github.com/OfficeDev/Project-CSOM-Read-Local-CustomFields sample uses C# and the Project CSOM to demonstrate how to access custom fields that are defined within a project. 
 
 Users typically access local custom fields by opening a project using the Project Professional  or Project Pro for O365, then selecting Custom Fields from the Project tab of the ribbon. 
 
 ## Scenario
 
-As a team member or project manager, I want quick access to view custom fields stored within a project. That means no desktop project management app and no navigation to reach the custom fields. 
+I want to be able to retrieve project local custom fields  so I can display properties/data unique to my projects.
 
 ### Using App
 
