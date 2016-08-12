@@ -6,7 +6,7 @@ Users typically access local custom fields by opening a project using the Projec
 
 ## Scenario
 
-I want to be able to retrieve project local custom fields  so I can display properties/data unique to my projects.
+I want to be able to retrieve project local custom fields so that I can display properties/data unique to my projects.
 
 ### Using App
 
