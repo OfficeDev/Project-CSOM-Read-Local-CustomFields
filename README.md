@@ -2,7 +2,7 @@
 
 The TaskCustomFields sample uses C# and the Project CSOM to demonstrate how to access custom fields that are defined within a project. 
 
-Users typically access local custom fields by opening a project using the Project desktop application or Project 365, then selecting Custom Fields from the Project tab of the ribbon. 
+Users typically access local custom fields by opening a project using the Project Professional  or Project Pro for O365, then selecting Custom Fields from the Project tab of the ribbon. 
 
 ## Scenario
 
