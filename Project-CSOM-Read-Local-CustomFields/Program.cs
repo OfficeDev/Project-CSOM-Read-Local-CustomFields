@@ -17,7 +17,7 @@ namespace ProjectReadLocalCustomFields
         private static String SampleProjectName = "Local Custom Fields";
 
         private static ProjectContext projContext =
-            new ProjectContext("https://mod931216.sharepoint.com/sites/pwa");
+            new ProjectContext("https://contoso.sharepoint.com/sites/pwa");
 
         static void Main(string[] args)
         {
