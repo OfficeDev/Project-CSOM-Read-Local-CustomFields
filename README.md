@@ -21,11 +21,6 @@ To use this code sample, you need the following:
 * Visual Studio 2013 or later 
 * Project CSOM client DLL.  It is available as a Nuget Package from [here](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM/)
 * The project named "Local Custom Fields" added to the Project PWA site.
- 
-#### Deployment
-1.	Load the "Local Custom Fields" project file onto the PWA site. 
-2.	Update the user credentials in the app.
-3.	Compile the app.
 
 
 ## How the sample affects your tenant data
