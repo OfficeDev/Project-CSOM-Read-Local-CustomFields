@@ -10,10 +10,11 @@ I want to be able to retrieve project local custom fields so that I can display 
 
 ### Using App
 
-1.	Choose the PWA site you want to connect to and click connect.
-2.	Update the login/password to your PWA site.
-3. Upload the sample Project mpp file to PWA and publish
-4.	Run the app (update project name if you are using a different project)
+1.	Add the Project CSOM client package [here](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM/)
+2.	Update the PWA site
+3.	Update the login/password to your PWA site.
+4.  Upload the sample Project mpp file to PWA and publish
+5.	Run the app
 
 ### Prerequisites
 To use this code sample, you need the following:
