@@ -8,15 +8,15 @@ Users typically access local custom fields by opening a project using the Projec
 
 I want to be able to retrieve project local custom fields so that I can display properties/data unique to my projects.
 
-### Using App
+## Using the app
 
-1.	Add the Project CSOM client package [here](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM/)
-2.	Update the PWA site
+1.	Add the Project CSOM client package [here](https://www.nuget.org/packages/Microsoft.SharePointOnline.CSOM/).
+2.	Update the PWA site.
 3.	Update the login/password to your PWA site.
-4.  Upload the sample Project mpp file to PWA and publish
-5.	Run the app
+4.  Upload the sample Project mpp file to PWA and publish.
+5.	Run the app.
 
-### Prerequisites
+## Prerequisites
 To use this code sample, you need the following:
 * Project Online tenant.
 * Visual Studio 2013 or later 
