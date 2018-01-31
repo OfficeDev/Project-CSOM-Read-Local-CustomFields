@@ -1,0 +1,19 @@
+### YamlMime:Sample
+sample:
+- name: 'Project add-in: CSOM Read Local CustomFields'
+  path: ''
+  description: The github.com/OfficeDev/Project-CSOM-Read-Local-CustomFields sample uses C# and the Project CSOM to demonstrate how to access custom fields that are defined within a project.
+  readme: ''
+  generateZip: FALSE
+  isLive: TRUE
+  technologies:
+  - Office Add-in
+  azureDeploy: ''
+  author: NadinMerali
+  platforms: []
+  languages:
+  - C#
+  extensions:
+    products:
+    - Project
+    scenarios: []
