@@ -1,3 +1,14 @@
+---
+topic: sample
+products:
+- Project
+- Office 365
+languages:
+- C#
+extensions:
+  contentType: samples
+  createdDate: 8/12/2016 12:14:15 PM
+---
 # Project CSOM Read Local CustomFields
 
 The github.com/OfficeDev/Project-CSOM-Read-Local-CustomFields sample uses C# and the Project CSOM to demonstrate how to access custom fields that are defined within a project. 
