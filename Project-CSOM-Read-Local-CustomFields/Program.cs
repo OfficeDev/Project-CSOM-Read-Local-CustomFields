@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net;
 using System.Security;
 using Microsoft.ProjectServer.Client;
 using Microsoft.SharePoint.Client;
@@ -16,8 +17,10 @@ namespace ProjectReadLocalCustomFields
         // Project name to access
         private static String SampleProjectName = "Local Custom Fields";
 
+        private static readonly string SiteUrl = "https://contoso.sharepoint.com/sites/pwa";
+
         private static ProjectContext projContext =
-            new ProjectContext("https://contoso.sharepoint.com/sites/pwa");
+            new ProjectContext(SiteUrl);
 
         static void Main(string[] args)
         {
@@ -36,13 +39,14 @@ namespace ProjectReadLocalCustomFields
 
             using (projContext)
             {
-                // Supply user credentials
+                // Get login cookie using WebLogin
+                var cookies = WebLogin.GetWebLoginCookie(new Uri(SiteUrl));
 
-                SecureString passWord = new SecureString();
-              foreach (char c in "password".ToCharArray()) passWord.AppendChar(c);
-
-
-              projContext.Credentials = new SharePointOnlineCredentials("sarad@contoso.onmicrosoft.com", passWord);
+                projContext.ExecutingWebRequest += delegate (object sender, WebRequestEventArgs e)
+                {
+                    e.WebRequestExecutor.WebRequest.CookieContainer = new CookieContainer();
+                    e.WebRequestExecutor.WebRequest.CookieContainer.SetCookies(new Uri(SiteUrl), cookies);
+                };
 
                 // 1. Retrieve the project, tasks, etc.
                 var projColl = projContext.LoadQuery(projContext.Projects
